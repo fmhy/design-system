@@ -1,0 +1,10 @@
+{
+  "name": "@fmhy/design-system",
+  "type": "module",
+  "devDependencies": {
+    "@changesets/cli": "^2.27.1"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}
