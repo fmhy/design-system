@@ -1,0 +1,14 @@
+{
+  "name": "@fmhy/docs",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "sass": "^1.71.1",
+    "unocss": "^0.58.5",
+    "vitepress": "1.0.0-rc.45",
+    "vue": "^3.4.21"
+  }
+}
