@@ -1,19 +1,17 @@
 {
-  "name": "@fmhy/colors",
-  "type": "module",
-  "main": "dist/index.mjs",
-  "types": "dist/index.d.ts",
-  "files": [
-    "dist/**/*.js",
-    "dist/**/*.d.ts"
-  ],
-  "scripts": {
-    "build": "tasker build",
-    "format": "prettier --write --cache \"src/**/*.ts\"",
-    "typecheck": "tsc --noEmit"
-  },
-  "packageManager": "pnpm@8.7.0",
-  "engines": {
-    "node": ">=18.16.1"
-  }
+	"name": "@fmhy/colors",
+	"type": "module",
+	"version": "0.0.9",
+	"main": "dist/index.mjs",
+	"types": "dist/index.d.ts",
+	"files": ["dist/**/*.js", "dist/**/*.d.ts"],
+	"scripts": {
+		"build": "tasker build",
+		"format": "prettier --write --cache \"src/**/*.ts\"",
+		"typecheck": "tsc --noEmit"
+	},
+	"packageManager": "pnpm@8.7.0",
+	"engines": {
+		"node": ">=18.16.1"
+	}
 }
