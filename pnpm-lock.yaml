@@ -35,7 +35,7 @@ importers:
         version: 2.27.1
       '@taskylizard/eslint-config':
         specifier: ^1.1.2
-        version: 1.1.2(eslint-plugin-import@2.29.1)(eslint@8.57.0)(prettier@3.2.2)(typescript@5.4.2)
+        version: 1.1.2(eslint-plugin-import@2.29.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.2)
       '@taskylizard/tasker':
         specifier: ^1.0.7
         version: 1.0.7(typescript@5.4.2)
@@ -52,11 +52,11 @@ importers:
         specifier: ^1.6.5
         version: 1.6.5
       prettier:
-        specifier: 3.2.2
-        version: 3.2.2
+        specifier: 3.2.5
+        version: 3.2.5
       prettier-plugin-packagejson:
         specifier: ^2.4.12
-        version: 2.4.12(prettier@3.2.2)
+        version: 2.4.12(prettier@3.2.5)
 
   docs:
     dependencies:
@@ -1921,7 +1921,7 @@ packages:
       - typescript
     dev: true
 
-  /@taskylizard/eslint-config@1.1.2(eslint-plugin-import@2.29.1)(eslint@8.57.0)(prettier@3.2.2)(typescript@5.4.2):
+  /@taskylizard/eslint-config@1.1.2(eslint-plugin-import@2.29.1)(eslint@8.57.0)(prettier@3.2.5)(typescript@5.4.2):
     resolution: {integrity: sha512-SRAHBnftyUMDJDhPcWNQgYH2NPcsg0Ip6jhmYTfOetFFUMFkeC9mHudEueSXJ3fztia8TyVg+3/cGAqBvEWotQ==}
     peerDependencies:
       eslint: '>=8.0.0'
@@ -1958,7 +1958,7 @@ packages:
       eslint-plugin-markdown: 3.0.1(eslint@8.57.0)
       eslint-plugin-n: 16.6.2(eslint@8.57.0)
       eslint-plugin-perfectionist: 2.6.0(astro-eslint-parser@0.16.3)(eslint@8.57.0)(typescript@5.4.2)(vue-eslint-parser@9.4.2)
-      eslint-plugin-prettier: 5.0.0(eslint-config-prettier@9.0.0)(eslint@8.57.0)(prettier@3.2.2)
+      eslint-plugin-prettier: 5.0.0(eslint-config-prettier@9.0.0)(eslint@8.57.0)(prettier@3.2.5)
       eslint-plugin-react: 7.34.0(eslint@8.57.0)
       eslint-plugin-react-hooks: 4.6.0(eslint@8.57.0)
       eslint-plugin-unicorn: 50.0.1(eslint@8.57.0)
@@ -1967,7 +1967,7 @@ packages:
       eslint-plugin-yml: 1.12.2(eslint@8.57.0)
       globals: 13.24.0
       jsonc-eslint-parser: 2.4.0
-      prettier: 3.2.2
+      prettier: 3.2.5
       typescript: 5.4.2
       vue-eslint-parser: 9.4.2(eslint@8.57.0)
       yaml-eslint-parser: 1.2.2
@@ -4027,7 +4027,7 @@ packages:
       - typescript
     dev: true
 
-  /eslint-plugin-prettier@5.0.0(eslint-config-prettier@9.0.0)(eslint@8.57.0)(prettier@3.2.2):
+  /eslint-plugin-prettier@5.0.0(eslint-config-prettier@9.0.0)(eslint@8.57.0)(prettier@3.2.5):
     resolution: {integrity: sha512-AgaZCVuYDXHUGxj/ZGu1u8H8CYgDY3iG6w5kUFw4AzMVXzB7VvbKgYR4nATIN+OvUrghMbiDLeimVjVY5ilq3w==}
     engines: {node: ^14.18.0 || >=16.0.0}
     peerDependencies:
@@ -4043,7 +4043,7 @@ packages:
     dependencies:
       eslint: 8.57.0
       eslint-config-prettier: 9.0.0(eslint@8.57.0)
-      prettier: 3.2.2
+      prettier: 3.2.5
       prettier-linter-helpers: 1.0.0
       synckit: 0.8.8
     dev: true
@@ -6314,7 +6314,7 @@ packages:
       fast-diff: 1.3.0
     dev: true
 
-  /prettier-plugin-packagejson@2.4.12(prettier@3.2.2):
+  /prettier-plugin-packagejson@2.4.12(prettier@3.2.5):
     resolution: {integrity: sha512-hifuuOgw5rHHTdouw9VrhT8+Nd7UwxtL1qco8dUfd4XUFQL6ia3xyjSxhPQTsGnSYFraTWy5Omb+MZm/OWDTpQ==}
     peerDependencies:
       prettier: '>= 1.16.0'
@@ -6322,7 +6322,7 @@ packages:
       prettier:
         optional: true
     dependencies:
-      prettier: 3.2.2
+      prettier: 3.2.5
       sort-package-json: 2.8.0
       synckit: 0.9.0
     dev: true
@@ -6333,8 +6333,8 @@ packages:
     hasBin: true
     dev: true
 
-  /prettier@3.2.2:
-    resolution: {integrity: sha512-HTByuKZzw7utPiDO523Tt2pLtEyK7OibUD9suEJQrPUCYQqrHr74GGX6VidMrovbf/I50mPqr8j/II6oBAuc5A==}
+  /prettier@3.2.5:
+    resolution: {integrity: sha512-3/GWa9aOC0YeD7LUfvOG2NiDyhOWRvt1k+rcKhOuYnMY24iiCphgneUfJDyFXd6rZCAnuLBv6UeAULtrhT/F4A==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
