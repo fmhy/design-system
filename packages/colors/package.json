@@ -1,9 +1,19 @@
 {
   "name": "@fmhy/colors",
-  "module": "src/index.ts",
   "type": "module",
-  "devDependencies": {},
-  "peerDependencies": {
-    "typescript": "^5.0.0"
+  "main": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts"
+  ],
+  "scripts": {
+    "build": "tasker build",
+    "format": "prettier --write --cache \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit"
+  },
+  "packageManager": "pnpm@8.7.0",
+  "engines": {
+    "node": ">=18.16.1"
   }
 }

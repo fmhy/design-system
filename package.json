@@ -1,8 +1,25 @@
 {
   "name": "@fmhy/design-system",
   "type": "module",
+  "scripts": {
+    "lint": "pnpm --parallel -r lint",
+    "format": "pnpm --parallel -r format",
+    "build": "pnpm --parallel -r build",
+    "release": "pnpm build && pnpm changeset publish",
+    "version-packages": "changeset version",
+    "knip": "knip"
+  },
+  "author": "taskirel <taskylizard@fmhy.net>",
+  "license": "MIT",
+  "packageManager": "pnpm@8.15.4",
   "devDependencies": {
-    "@changesets/cli": "^2.27.1"
+    "@changesets/cli": "^2.27.1",
+    "@taskylizard/tasker": "^1.0.7",
+    "@types/node": "^20.11.25",
+    "eslint": "^8.57.0",
+    "knip": "^5.0.3",
+    "prettier": "3.2.2",
+    "prettier-plugin-packagejson": "^2.4.12"
   },
   "peerDependencies": {
     "typescript": "^5.0.0"

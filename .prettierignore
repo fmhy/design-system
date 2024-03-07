@@ -1,0 +1,16 @@
+dist
+.github/
+pnpm-lock.yaml
+package-lock.json
+yarn.lock
+*.json
+cache
+.cache
+package.json
+public
+CHANGELOG.md
+.yarn
+node_modules
+.next
+build
+.contentlayer

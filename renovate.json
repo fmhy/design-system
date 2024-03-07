@@ -1,0 +1,36 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":rebaseStalePrs"],
+  "automerge": true,
+  "automergeType": "branch",
+  "platformAutomerge": true,
+  "lockFileMaintenance": {
+    "automerge": true
+  },
+  "major": {
+    "automerge": false
+  },
+  "labels": ["renovate"],
+  "packageRules": [
+    {
+      "groupName": "definitelyTyped",
+      "matchPackagePrefixes": ["@types/"],
+      "automerge": true
+    },
+    {
+      "matchPackagePatterns": ["*"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "all non-major dependencies",
+      "groupSlug": "all-minor-patch"
+    },
+    {
+      "automerge": true,
+      "extends": ["packages:linters"]
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ],
+  "prBodyNotes": ["{{#if isMajor}}:warning: MAJOR MAJOR MAJOR :warning:{{/if}}"]
+}
