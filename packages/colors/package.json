@@ -1,10 +1,13 @@
 {
 	"name": "@fmhy/colors",
 	"type": "module",
-	"version": "0.0.9",
+	"version": "0.0.10",
 	"main": "dist/index.mjs",
 	"types": "dist/index.d.ts",
-	"files": ["dist/**/*.js", "dist/**/*.d.ts"],
+	"files": [
+		"dist/**/*.js",
+		"dist/**/*.d.ts"
+	],
 	"scripts": {
 		"build": "tasker build",
 		"format": "prettier --write --cache \"src/**/*.ts\"",
