@@ -6,11 +6,12 @@
 	"scripts": {
 		"lint": "pnpm --parallel -r lint",
 		"format": "pnpm --parallel -r format",
-		"build": "pnpm --parallel -r build",
+		"build": "pnpm --parallel -F @fmhy/* build",
 		"release": "pnpm build && pnpm changeset publish",
 		"docs": "pnpm -F docs",
 		"version-packages": "changeset version",
-		"knip": "knip"
+		"knip": "knip",
+		"postinstall": "pnpm build"
 	},
 	"author": "taskirel",
 	"license": "MIT",
