@@ -3,23 +3,14 @@
 layout: home
 
 hero:
-  name: "Design System"
-  text: "🎋"
-  tagline: My great project tagline
+  name: 'Design System'
+  text: '🎋'
+  tagline: so cool
   actions:
     - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
+      text: Colors
+      link: /colors
     - theme: alt
       text: API Examples
       link: /api-examples
-
-features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - title: Feature C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
 ---
-

@@ -1,5 +1,7 @@
 dist
 .github/
+.vitepress/dist
+.vitepress/cache
 pnpm-lock.yaml
 package-lock.json
 yarn.lock

@@ -8,6 +8,7 @@
 		"format": "pnpm --parallel -r format",
 		"build": "pnpm --parallel -r build",
 		"release": "pnpm build && pnpm changeset publish",
+		"docs": "pnpm -F docs",
 		"version-packages": "changeset version",
 		"knip": "knip"
 	},
