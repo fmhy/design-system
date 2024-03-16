@@ -5,6 +5,7 @@ import { presetUno, presetWind, presetTypography } from 'unocss'
 export default defineConfig({
   title: 'Design System',
   description: '🎋',
+  cleanUrls: true,
   vite: {
     plugins: [
       UnoCSS({ presets: [presetUno(), presetWind(), presetTypography()] })
