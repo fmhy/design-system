@@ -1,7 +1,7 @@
 {
 	"name": "@fmhy/colors",
 	"type": "module",
-	"version": "0.0.10",
+	"version": "0.0.11",
 	"main": "dist/index.mjs",
 	"types": "dist/index.d.ts",
 	"files": [
