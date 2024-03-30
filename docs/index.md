@@ -11,6 +11,6 @@ hero:
       text: Colors
       link: /colors
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: Components
+      link: /components
 ---

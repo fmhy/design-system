@@ -1,6 +1,14 @@
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
-import { presetUno, presetWind, presetTypography } from 'unocss'
+import { colors } from '@fmhy/colors'
+import { presetUno, presetWind } from 'unocss'
+
+const safelist = Object.entries(colors).flatMap(([group, shades]) =>
+  Object.keys(shades).flatMap((shade) => [
+    `text-${group}-${shade}`,
+    `bg-${group}-${shade}`
+  ])
+)
 
 export default defineConfig({
   title: 'Design System',
@@ -8,7 +16,12 @@ export default defineConfig({
   cleanUrls: true,
   vite: {
     plugins: [
-      UnoCSS({ presets: [presetUno(), presetWind(), presetTypography()] })
+      // @ts-expect-error
+      UnoCSS({
+        theme: { colors: colors },
+        safelist,
+        presets: [presetUno(), presetWind()]
+      })
     ]
   },
   themeConfig: {

@@ -1,19 +1,20 @@
 {
-	"name": "@fmhy-monorepo/docs",
-	"version": "1.0.0",
-	"private": true,
-	"type": "module",
-	"scripts": {
-		"build": "vitepress build",
-		"dev": "vitepress dev",
-		"format": "prettier --write --cache .",
-		"preview": "vitepress preview"
-	},
-	"dependencies": {
-		"@fmhy/colors": "workspace:^",
-		"sass": "^1.71.1",
-		"unocss": "^0.58.5",
-		"vitepress": "1.0.0-rc.45",
-		"vue": "^3.4.21"
-	}
+  "name": "@fmhy-monorepo/docs",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vitepress build",
+    "dev": "vitepress dev",
+    "format": "prettier --write --cache *.{md,vue,ts}",
+    "preview": "vitepress preview"
+  },
+  "dependencies": {
+    "@fmhy/colors": "workspace:^",
+    "@fmhy/components": "workspace:^",
+    "sass": "^1.71.1",
+    "unocss": "^0.58.5",
+    "vitepress": "1.0.0-rc.45",
+    "vue": "^3.4.21"
+  }
 }
