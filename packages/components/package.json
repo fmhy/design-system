@@ -1,5 +1,6 @@
 {
 	"name": "@fmhy/components",
+	"version": "0.0.0",
 	"type": "module",
 	"sideEffects": false,
 	"exports": {
