@@ -1,0 +1,54 @@
+{
+	"name": "@fmhy/components",
+	"type": "module",
+	"sideEffects": false,
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.mjs",
+			"require": "./dist/index.js"
+		},
+		"./components": {
+			"types": "./dist/components/index.d.ts",
+			"import": "./dist/components/index.mjs",
+			"require": "./dist/components/index.js"
+		}
+	},
+	"main": "./dist/index.js",
+	"module": "./dist/index.mjs",
+	"types": "./dist/index.d.ts",
+	"typesVersions": {
+		"*": {
+			"*": [
+				"*",
+				"dist/*",
+				"dist/*.d.ts",
+				"dist/*/index.d.ts"
+			]
+		}
+	},
+	"files": [
+		"components.d.ts",
+		"dist"
+	],
+	"packageManager": "pnpm@8.15.5",
+	"engines": {
+		"node": ">=18.16.1"
+	},
+	"scripts": {
+		"build": "unbuild",
+		"format": "prettier --write --cache \"src/**/*\""
+	},
+	"peerDependencies": {
+		"typescript": "^5.0.0",
+		"vue": "^3.4.21"
+	},
+	"dependencies": {
+		"vue": "^3.4.21"
+	},
+	"devDependencies": {
+		"mkdist": "^1.4.0",
+		"unbuild": "^2.0.0",
+		"@vue/tsconfig": "^0.5.1"
+	}
+}
