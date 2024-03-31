@@ -31,7 +31,7 @@ const classes = computed(() => {
       container: 'h-40 text-sm',
       bgleft: 'h-40 w-40 blur-2xl -left-20',
       bgright: 'h-60 w-60 blur-2xl -top-24',
-      tag: 'text-3xl',
+      title: 'text-3xl',
       icon: 'top-12 left-4',
       description: 'mt-2 text-sm'
     }
@@ -40,7 +40,7 @@ const classes = computed(() => {
       container: 'h-96',
       bgleft: 'h-80 w-80 blur-3xl -left-32',
       bgright: 'h-96 w-96 blur-3xl -top-56',
-      tag: 'text-6xl',
+      title: 'text-6xl',
       icon: 'top-36 left-6',
       description: 'mt-4'
     }
@@ -53,8 +53,8 @@ const classes = computed(() => {
     class="rounded-2xl border border-amber overflow-hidden flex flex-col relative text-color bg-zinc-900">
     <div class="p-4 sticky top-0 z-10">
       <div class="flex items-center gap-1.5">
-        <div :class="theme.title" class="font-medium">
-          {{ props.title }}
+        <div :class="theme.tag" class="font-medium">
+          {{ props.tag }}
         </div>
       </div>
     </div>
@@ -62,8 +62,8 @@ const classes = computed(() => {
     <div :class="`${theme.bgright} ${classes.bgright} absolute left-1/2 -translate-x-1/2 rounded-full mix-blend`"></div>
     <div :class="`absolute ${classes.icon}`">
       <div class="flex items-start">
-        <div :class="classes.tag" class="font-normal tracking-tighter text-color-50">
-          {{ props.tag }}
+        <div :class="classes.title" class="font-normal tracking-tighter text-color-50">
+          {{ props.title }}
         </div>
         <a v-if="props.link" :href="props.link" target="_blank">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" :class="theme.link"
