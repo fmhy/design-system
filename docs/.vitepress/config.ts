@@ -1,7 +1,12 @@
 import { defineConfig } from 'vitepress'
 import UnoCSS from 'unocss/vite'
 import { colors } from '@fmhy/colors'
-import { presetUno, presetWind } from 'unocss'
+import {
+  presetIcons,
+  presetUno,
+  presetWind,
+  transformerDirectives
+} from 'unocss'
 
 const safelist = Object.entries(colors).flatMap(([group, shades]) =>
   Object.keys(shades).flatMap((shade) => [
@@ -16,22 +21,27 @@ export default defineConfig({
   cleanUrls: true,
   vite: {
     plugins: [
-      // @ts-expect-error
       UnoCSS({
+        transformers: [transformerDirectives()],
         theme: { colors: colors },
         safelist,
-        presets: [presetUno(), presetWind()]
+        shortcuts: {
+          'bg-main': 'bg-white dark:bg-[#111]'
+        },
+        presets: [presetUno(), presetWind(), presetIcons()]
       })
     ]
   },
+
   themeConfig: {
-    // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
       { text: 'Colors', link: '/colors' }
     ],
-
-    sidebar: [{ text: 'Colors', link: '/colors' }],
+    sidebar: [
+      { text: 'Colors', link: '/colors' },
+      { text: 'Components', link: '/components' }
+    ],
 
     socialLinks: [
       { icon: 'github', link: 'https://github.com/fmhy/design-system' }
