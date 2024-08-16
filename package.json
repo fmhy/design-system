@@ -21,7 +21,7 @@
 		"@taskylizard/eslint-config": "^1.1.2",
 		"@taskylizard/tasker": "^1.0.7",
 		"@types/node": "^20.11.25",
-		"eslint": "^8.57.0",
+		"eslint": "^9.0.0",
 		"knip": "^5.0.3",
 		"lefthook": "^1.6.5",
 		"prettier": "3.2.5",
