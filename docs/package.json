@@ -13,8 +13,8 @@
     "@fmhy/colors": "workspace:^",
     "@fmhy/components": "workspace:^",
     "sass": "^1.71.1",
-    "unocss": "^0.58.5",
-    "vitepress": "1.3.2",
+    "unocss": "^0.63.0",
+    "vitepress": "1.4.1",
     "vue": "^3.4.21"
   },
   "devDependencies": {

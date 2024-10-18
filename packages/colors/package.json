@@ -13,7 +13,7 @@
 		"format": "prettier --write --cache \"src/**/*.ts\"",
 		"typecheck": "tsc --noEmit"
 	},
-	"packageManager": "pnpm@9.6.0",
+	"packageManager": "pnpm@9.12.2",
 	"engines": {
 		"node": ">=18.16.1"
 	}
